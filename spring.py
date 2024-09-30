@@ -14,7 +14,7 @@ t = df["time"].to_numpy()
 z1 = df["z1"].to_numpy() / 1000.0
 z2 = df["z2"].to_numpy() / 1000.0
 
-
+#sdrfsdfsdf
 def fourier_transform(t, x, samplerate):
     fourier = np.fft.rfft(x)
     xfourier = np.fft.rfftfreq(len(t), 1.0/samplerate)
