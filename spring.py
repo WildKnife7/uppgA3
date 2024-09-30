@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-path = "data/rig2_measure4.tsv"
+path = "data/rig1_measure2.tsv"
 spring_names = ["frame", "time", "x1", "y1", "z1", "x2", "y2", "z2"]
 
 df = pd.read_csv(path, sep="\t", skiprows=11, names=spring_names)
@@ -14,7 +14,7 @@ t = df["time"].to_numpy()
 z1 = df["z1"].to_numpy() / 1000.0
 z2 = df["z2"].to_numpy() / 1000.0
 
-#sdrfsdfsdf
+
 def fourier_transform(t, x, samplerate):
     fourier = np.fft.rfft(x)
     xfourier = np.fft.rfftfreq(len(t), 1.0/samplerate)
