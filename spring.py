@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-path = "data/rig1_measure2.tsv"
+path = "data/rig1_measure1.tsv"
 spring_names = ["frame", "time", "x1", "y1", "z1", "x2", "y2", "z2"]
 
 df = pd.read_csv(path, sep="\t", skiprows=11, names=spring_names)
